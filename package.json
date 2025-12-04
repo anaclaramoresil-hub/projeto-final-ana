@@ -1,0 +1,18 @@
+{
+  "name": "atividade_academia",
+  "version": "1.0.0",
+  "main": "index.js",
+  "scripts": {
+    "dev": "next dev -p 80",
+    "start": "next start",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "",
+  "license": "ISC",
+  "description": "",
+  "dependencies": {
+    "mysql2": "^3.14.3",
+    "next": "^15.5.3",
+    "sequelize": "^6.37.7"
+  }
+}
