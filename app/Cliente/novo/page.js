@@ -1,6 +1,6 @@
 import {Cliente} from '../../../database/table';
 import {redirect} from 'next/navigation';
-    
+import "../../css/cadastro.css";
 async function InsereCliente(formData){
    'use server';
     const dados = {
@@ -15,6 +15,7 @@ async function InsereCliente(formData){
  
  function TelaNovoCliente() {
     return (
+           <div>
         <form action= {InsereCliente}>
           <label htmlFor= "Nome">Nome</label> <br></br>  
           <input type= "text" name= "nome"></input> <br></br>  
@@ -28,8 +29,9 @@ async function InsereCliente(formData){
           <label htmlFor= "Email">Email</label> <br></br>  
           <input type= "text" name= "email"></input> <br></br>  
 
-          <button>Cadastrar</button>
+          <button className='bt-classico'>Cadastrar</button>
         </form>
+        </div>
     );
   }
 

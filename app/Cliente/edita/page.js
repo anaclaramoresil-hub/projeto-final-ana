@@ -1,6 +1,7 @@
 
 import { Cliente } from "../../../database/table";
 import { redirect } from "next/navigation";
+import "../../css/cadastro.css";
 
 async function EditaCliente(formData) {
     'use server';
@@ -26,7 +27,7 @@ async function TelaEditaCliente({ searchParams }) {
     const id = searchParams.id;
     const cliente = await Cliente.findByPk(id);
     return (
-        <>
+        <div>
             <h1>Editando o Cliente</h1>
             <form action={EditaCliente}>
                 <input type="hidden" name="id" defaultValue={cliente.id} />
@@ -45,7 +46,7 @@ async function TelaEditaCliente({ searchParams }) {
 
                 <button>Salvar</button>
             </form>
-        </>
+        </div>
     );
 
 }
