@@ -12,7 +12,7 @@ async function InsereCliente(formData){
    await   Cliente.create(dados);
    redirect('/Cliente')
 }
- 
+       
  function TelaNovoCliente() {
     return (
            <div>
