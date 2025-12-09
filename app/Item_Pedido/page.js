@@ -1,9 +1,11 @@
 import {Item_Pedido} from "../../database/table";
+import {redirect} from 'next/navigation';
+import "../../css/cadastro.css";
 
 async function Itens_Pedidos(){
     const item_pedido = await Item_Pedido.findAll();
     return (
-    <>
+    <div>
            <h1>Lista de Itens dos Pedidos</h1>
            <a href= "/Item_Pedido/novoItem">Cadastrar Itens dos Pedido</a>
 
@@ -35,7 +37,7 @@ async function Itens_Pedidos(){
           </tbody>
       
           </table>
-    </>
+    </div>
 
     );
 }
