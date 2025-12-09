@@ -1,12 +1,12 @@
 import {Pagamento} from "../../database/table";
-
+import "../../css/cadastro.css";
 
 
 
 async function Pagamentos(){
     const pagamentos = await Pagamento.findAll();
     return (
-    <>
+    <div>
            <h1>Lista de Pagamentos</h1>
            <a href= "/Pagamento/novoPag">Cadastrar Pagamentos</a>
 
@@ -39,7 +39,7 @@ async function Pagamentos(){
           </tbody>
       
           </table>
-    </>
+    </div>
 
     );
 }
