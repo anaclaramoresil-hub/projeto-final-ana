@@ -21,7 +21,9 @@ async function InsereItem_Pedido(formData){
 
           <label htmlFor= "Preco_Unitario">Preco_Unitario</label> <br></br>  
           <input type= "text" name= "preco_unitario"></input> <br></br>  
-
+             
+          <button className='bt-classico'>Cadastrar</button>
+          
           <button>Cadastrar Itens do seu pedido</button>
         </form>
     );

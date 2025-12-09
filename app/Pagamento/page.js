@@ -1,5 +1,5 @@
 import {Pagamento} from "../../database/table";
-import "../../css/cadastro.css";
+import "../../css/cadastro.css"; 
 
 
 
