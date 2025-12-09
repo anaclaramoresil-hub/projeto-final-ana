@@ -18,7 +18,7 @@ export default function RootLayout({ children }) {
          </main>
         
       <footer>
-        <p>LPI 27/11/25</p>
+        <p>AC FitStore</p>
       </footer>
       </body>
     </html>
