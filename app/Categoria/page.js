@@ -1,5 +1,6 @@
 import { Categoria } from "../../database/table";
 import { redirect } from "next/navigation";
+import "../css/listagem.css";
 
 async function DeletaCategoria(formData){
   'use server';
@@ -14,7 +15,7 @@ async function DeletaCategoria(formData){
 async function Categorias() {
     const categorias = await Categoria.findAll();
     return (
-        <>
+        <div>
         <h1>Categorias</h1>
         <a href= "/Categoria/novoCat"> Categorias </a>
         <table border = "1" >
@@ -54,7 +55,7 @@ async function Categorias() {
       }
         </tbody> 
         </table>   
-           </>
+           </div>
     );
 }
 
