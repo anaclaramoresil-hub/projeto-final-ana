@@ -1,5 +1,6 @@
 import {Produto} from '../../../database/table';
 import {redirect} from 'next/navigation';
+import "../../css/cadastro.css";
 
 
 async function InsereProduto(formData){
@@ -16,6 +17,7 @@ async function InsereProduto(formData){
 
  function TelaNovoProduto() {
     return (
+      <div>
         <form action= {InsereProduto}>
           <label htmlFor= "Nome">Nome</label> <br></br>  
           <input type= "text" name= "nome"></input> <br></br>  
@@ -31,6 +33,7 @@ async function InsereProduto(formData){
 
           <button>Cadastrar Produto</button>
         </form>
+        </div>
     );
   }
 

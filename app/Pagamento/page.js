@@ -1,6 +1,7 @@
 import {Pagamento} from "../../database/table";
 import { redirect } from "next/navigation";
-import "../../css/cadastro.css"; 
+import "../css/listagem.css";
+
 
 
 

@@ -1,5 +1,6 @@
 import {Produto} from "../../database/table";
 import { redirect } from "next/navigation";
+import "../css/listagem.css";
 
 async function DeletaProduto(formData){
     'use server';
@@ -13,7 +14,7 @@ async function DeletaProduto(formData){
 async function Produtos(){
     const produtos = await Produto.findAll();
     return (
-    <>
+    <div>
            <h1>Lista de Produtos</h1>
            <a href= "/Produto/NovoProd">Cadastrar Produtos</a>
 
@@ -64,7 +65,7 @@ async function Produtos(){
           </tbody>
       
           </table>
-    </>
+    </div>
 
     );
 }

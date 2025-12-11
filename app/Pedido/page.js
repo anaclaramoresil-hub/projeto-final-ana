@@ -1,6 +1,5 @@
 import {Pedido} from "../../database/table";
 import { redirect } from "next/navigation";
-import "../../css/cadastro.css";
 import "../css/listagem.css";
 
 async function Pedidos(){
