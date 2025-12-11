@@ -1,5 +1,6 @@
 import {Pedido} from "../../database/table";
 import "../../css/cadastro.css";
+import "../css/listagem.css";
 
 async function Pedidos(){
     const pedidos = await Pedido.findAll();

@@ -1,5 +1,6 @@
 import {Pedido} from '../../../database/table';
 import {redirect} from 'next/navigation';
+import "../../css/cadastro.css";
 
 async function InserePedido(formData){
     'use server';
@@ -15,6 +16,7 @@ async function InserePedido(formData){
 
  function TelaNovoPedido() {
     return (
+      <div>
         <form action= {InserePedido}>
           <label htmlFor= "Status">Status</label> <br></br>  
           <input type= "text" name= "status"></input> <br></br>  
@@ -30,6 +32,7 @@ async function InserePedido(formData){
 
           <button>Cadastrar Pedido</button>
         </form>
+        </div>
     );
   }
 
