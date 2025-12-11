@@ -1,5 +1,7 @@
 import { Categoria } from "../../../database/table";
 import { redirect } from 'next/navigation';
+import "../../css/cadastro.css";
+
 
 async function InsereCategoria(formData) {
     'use server';
@@ -13,12 +15,15 @@ async function InsereCategoria(formData) {
 
 function TelaNovoCategoria(){
     return(
+        <div>
        <form action= {InsereCategoria}>
 
         <label htmlFor="Especificacao">Especificacao - Roupa ou Suplemento</label> <br></br>
         <input type="text" name="especificacao"></input>
+        <button className='bt-classico'>Cadastrar</button>
         <button>Inserir Categoria</button>
        </form>
+       </div>
     );
 }
 
