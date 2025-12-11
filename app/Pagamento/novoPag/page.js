@@ -1,5 +1,6 @@
 import {Pagamento} from '../../../database/table';
 import {redirect} from 'next/navigation';
+import "../../css/cadastro.css";
 
 async function InserePagamento(formData){
     'use server';
@@ -13,6 +14,7 @@ async function InserePagamento(formData){
 
  function TelaNovoPagamento() {
     return (
+      <div>
         <form action= {InserePagamento}>
           <label htmlFor= "Metodo_Pagamento">Metodo_Pagamento</label> <br></br>  
           <input type= "text" name= "metodo_pagamento"></input> <br></br>  
@@ -22,6 +24,7 @@ async function InserePagamento(formData){
 
           <button>Cadastrar Metodo de Pagamento</button>
         </form>
+        </div>
     );
   }
 

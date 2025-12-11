@@ -1,5 +1,7 @@
 import {Item_Pedido} from '../../../database/table';
 import {redirect} from 'next/navigation';
+import "../../css/cadastro.css";
+
 
 
 async function InsereItem_Pedido(formData){
@@ -15,6 +17,7 @@ async function InsereItem_Pedido(formData){
  
  function TelaNovoItem_Pedido() {
     return (
+      <div>
         <form action= {InsereItem_Pedido}>
           <label htmlFor= "Quantidade">Quantidade</label> <br></br>  
           <input type= "text" name= "quantidade"></input> <br></br>  
@@ -26,6 +29,7 @@ async function InsereItem_Pedido(formData){
           
           <button>Cadastrar Itens do seu pedido</button>
         </form>
+      </div>
     );
   }
 
