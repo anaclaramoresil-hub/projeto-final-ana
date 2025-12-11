@@ -1,5 +1,6 @@
 import { Categoria } from "../../../database/table";
 import { redirect } from "next/navigation";
+import "../../css/cadastro.css";
 
 async function EditaCategoria(formData) {
     'use server';
@@ -19,7 +20,7 @@ async function TelaEditaCategoria({ searchParams }) {
     const id = searchParams.id;
     const categoria = await Categoria.findByPk(id);
     return (
-        <>
+        <div>
             <h1>Editando a Categoria</h1>
             <form action={EditaCategoria}>
                 <input type="hidden" name="id" defaultValue={categoria.id} />
@@ -31,7 +32,7 @@ async function TelaEditaCategoria({ searchParams }) {
 
                 <button>Salvar</button>
             </form>
-        </>
+        </div>
     );
 
 }
