@@ -5,7 +5,7 @@ import "../css/listagem.css";
 async function Pedidos(){
     const pedidos = await Pedido.findAll();
     return (
-    <>
+    <div>
            <h1>Lista de Produtos</h1>
            <a href= "/Pedido/novoPedido">Cadastrar Pedidos</a>
 
@@ -44,7 +44,7 @@ async function Pedidos(){
           </tbody>
       
           </table>
-    </>
+    </div>
 
     );
 }

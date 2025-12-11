@@ -26,7 +26,7 @@ async function TelaEditaProduto({ searchParams }) {
     const id = searchParams.id;
     const produto = await Produto.findByPk(id);
     return (
-        <>
+        <div>
             <h1>Editando o Produto</h1>
             <form action={EditaProduto}>
                 <input type="hidden" name="id" defaultValue={produto.id} />
@@ -45,7 +45,7 @@ async function TelaEditaProduto({ searchParams }) {
 
                 <button>Salvar</button>
             </form>
-        </>
+        </div>
     );
 
 }
