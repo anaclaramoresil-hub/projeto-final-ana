@@ -1,4 +1,4 @@
-import Menu from "../componentes/menu"
+import Menu from "../componentes/menu";
 import "./css/base.css";
 
 export const metadata = {

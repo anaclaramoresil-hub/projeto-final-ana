@@ -1,4 +1,5 @@
 import {Item_Pedido} from "../../database/table";
+import { redirect } from "next/navigation";
 import "../../css/cadastro.css";
 
 async function Itens_Pedidos(){
